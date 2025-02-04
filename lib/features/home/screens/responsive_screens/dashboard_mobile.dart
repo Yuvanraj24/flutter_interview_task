@@ -19,24 +19,20 @@ class DashboardMobile extends StatelessWidget {
             SizedBox(height: AppSizes.spaceBtwSections),
 
             /// CARDS
-            SiajDashboardCard(
-              title: 'Sales total',
-              subTitle: '\$365.6',
+            SizedBox(
+              width: double.infinity,
+              child: SiajDashboardCard(
+                title: 'Number of JSON Data',
+                subTitle: '8',
+              ),
             ),
             SizedBox(height: AppSizes.spaceBtwItems),
-            SiajDashboardCard(
-              title: 'Average order value',
-              subTitle: '\$25.6',
-            ),
-            SizedBox(height: AppSizes.spaceBtwItems),
-            SiajDashboardCard(
-              title: 'Total orders',
-              subTitle: '\$37',
-            ),
-            SizedBox(height: AppSizes.spaceBtwItems),
-            SiajDashboardCard(
-              title: 'Visitors',
-              subTitle: '\$25,045',
+            SizedBox(
+              width: double.infinity,
+              child: SiajDashboardCard(
+                title: 'Number of User Data Loaded',
+                subTitle: '105',
+              ),
             ),
           ],
         ),

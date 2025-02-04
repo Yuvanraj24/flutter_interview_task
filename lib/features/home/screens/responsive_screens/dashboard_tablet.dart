@@ -19,40 +19,23 @@ class DashboardTablet extends StatelessWidget {
             SizedBox(height: AppSizes.spaceBtwSections),
 
             /// CARDS
-            Row(children: [
-              Expanded(
-                  child: SiajDashboardCard(
-                title: 'Sales total',
-                subTitle: '\$365.6',
-              )),
-              SizedBox(width: AppSizes.spaceBtwItems),
-              Expanded(
-                child: SiajDashboardCard(
-                  title: 'Average order value',
-                  subTitle: '\$25.6',
-                ),
-              ),
-            ]),
-            SizedBox(height: AppSizes.spaceBtwItems),
             Row(
               children: [
                 Expanded(
-                  child: SiajDashboardCard(
-                    title: 'Total orders',
-                    subTitle: '\$37',
-                  ),
-                ),
+                    child: SiajDashboardCard(
+                  title: 'Number of JSON Data',
+                  subTitle: '8',
+                )),
                 SizedBox(width: AppSizes.spaceBtwItems),
                 Expanded(
                   child: SiajDashboardCard(
-                    title: 'Visitors',
-                    subTitle: '\$25,045',
+                    title: 'Number of User Data Loaded',
+                    subTitle: '105',
                   ),
                 ),
               ],
             ),
-          ],
-        ),
+          ]),
       ),
     ));
   }
