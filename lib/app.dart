@@ -5,6 +5,8 @@ import 'package:flutter_task_project/routes/app_route_pages.dart';
 import 'package:flutter_task_project/routes/app_routes.dart';
 import 'package:flutter_task_project/utils/device/web_scroll.dart';
 
+import 'features/Form/dynamic_form.dart';
+
 class App extends StatelessWidget {
   const App({super.key});
 
@@ -17,8 +19,9 @@ class App extends StatelessWidget {
       darkTheme: AppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
       scrollBehavior: AppCustomScrollBehavior(),
-      routes: AppRoutesPages.pages,
-      initialRoute: AppRoutes.initial,
+      // routes: AppRoutesPages.pages,
+      // initialRoute: AppRoutes.initial,
+      home: DynamicFormScreen(),
     );
   }
 }
