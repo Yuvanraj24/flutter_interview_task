@@ -6,11 +6,9 @@ import 'package:flutter_task_project/constants/sizes.dart';
 import 'package:flutter_task_project/utils/device/device_utility.dart';
 import 'package:iconsax/iconsax.dart';
 
-/// Header Widget for the application
 class CustomHeader extends StatelessWidget implements PreferredSizeWidget {
   const CustomHeader({super.key, this.scaffoldKey});
 
-  /// Global key to access the Scaffold state
   final GlobalKey<ScaffoldState>? scaffoldKey;
 
   @override
@@ -23,14 +21,14 @@ class CustomHeader extends StatelessWidget implements PreferredSizeWidget {
       padding: EdgeInsets.symmetric(
           horizontal: AppSizes.md, vertical: AppSizes.sm),
       child: AppBar(
-        /// Mobile Menu
+
         leading: !DeviceUtils.isDesktopScreen(context)
             ? IconButton(
                 onPressed: () => scaffoldKey?.currentState?.openDrawer(),
                 icon: Icon(Iconsax.menu))
             : null,
 
-        /// Search Field
+
         title: DeviceUtils.isDesktopScreen(context)
             ? SizedBox(
                 width: 400,
@@ -42,17 +40,17 @@ class CustomHeader extends StatelessWidget implements PreferredSizeWidget {
               )
             : null,
 
-        /// Actions
+
         actions: [
-          // Search Icon on Mobile
+
           if (!DeviceUtils.isDesktopScreen(context))
             IconButton(onPressed: () {}, icon: Icon(Iconsax.search_normal)),
 
-          // Notification Icon
+
           IconButton(onPressed: () {}, icon: Icon(Iconsax.notification)),
           SizedBox(width: AppSizes.spaceBtwSections / 2),
 
-          // User Data
+
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -64,21 +62,17 @@ class CustomHeader extends StatelessWidget implements PreferredSizeWidget {
               ),
               SizedBox(width: AppSizes.sm),
 
-              // Name and Email
+
               if (!DeviceUtils.isMobileScreen(context))
                 Column(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // controller.loading.value
-                    //     ? const SiajShimmerEffect(width: 50, height: 13)
-                    //     :
-                    Text("controller.user.value.fullName",
+
+                    Text("Yuvanraj",
                         style: Theme.of(context).textTheme.titleLarge),
-                    // controller.loading.value
-                    //     ? const SiajShimmerEffect(width: 50, height: 13)
-                    //     :
-                    Text("controller.user.value.email",
+
+                    Text("itsmeyuvanraj@gmail.com",
                         style: Theme.of(context).textTheme.labelMedium),
                   ],
                 )

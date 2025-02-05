@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task_project/common/containers/rounded_container.dart';
-import 'package:flutter_task_project/common/texts/section_heading.dart';
 import 'package:flutter_task_project/constants/colors.dart';
 import 'package:flutter_task_project/constants/sizes.dart';
-import 'package:iconsax/iconsax.dart';
 
 class SiajDashboardCard extends StatelessWidget {
   const SiajDashboardCard({

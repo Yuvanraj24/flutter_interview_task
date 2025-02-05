@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_task_project/common/layouts/headers/header.dart';
 import 'package:flutter_task_project/common/layouts/sidebars/sidebar.dart';
 
-/// Widget for the Mobile layout
 class MobileLayout extends StatelessWidget {
   MobileLayout({super.key, this.body});
 

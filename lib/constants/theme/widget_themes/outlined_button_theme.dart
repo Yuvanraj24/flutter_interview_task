@@ -3,12 +3,12 @@ import 'package:flutter_task_project/constants/colors.dart';
 import 'package:flutter_task_project/constants/sizes.dart';
 
 
-/* -- Light & Dark Outlined Button Themes -- */
+
 class AppOutlinedButtonTheme {
-  AppOutlinedButtonTheme._(); //To avoid creating instances
+  AppOutlinedButtonTheme._();
 
 
-  /* -- Light Theme -- */
+
   static final lightOutlinedButtonTheme  = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
@@ -20,7 +20,7 @@ class AppOutlinedButtonTheme {
     ),
   );
 
-  /* -- Dark Theme -- */
+
   static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       foregroundColor: AppColors.light,

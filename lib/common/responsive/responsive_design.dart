@@ -8,13 +8,10 @@ class ResponsiveDesignWidget extends StatelessWidget {
       required this.tablet,
       required this.mobile});
 
-  /// Widget for desktop layout
   final Widget desktop;
 
-  /// Widget for tablet layout
   final Widget tablet;
 
-  /// Widget for mobile layout
   final Widget mobile;
 
   @override

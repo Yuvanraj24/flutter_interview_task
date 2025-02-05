@@ -37,10 +37,7 @@ class CustomSideBar extends StatelessWidget {
                       letterSpacingDelta: 1.2
                     )),
 
-                    // Menu Items
-                    // SiajMenuItem(route: SiajRoutes.firstScreen, icon: Iconsax.status, itemName: 'Dashboard'),
-                    // SiajMenuItem(route: SiajRoutes.secondScreen, icon: Iconsax.image, itemName: 'Media'),
-                    // SiajMenuItem(route: SiajRoutes.responsiveDesignScreen, icon: Iconsax.picture_frame, itemName: 'Banners'),
+
                   ],
                 ),
               )

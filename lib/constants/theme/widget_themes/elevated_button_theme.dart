@@ -2,12 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_task_project/constants/colors.dart';
 import 'package:flutter_task_project/constants/sizes.dart';
 
-/* -- Light & Dark Elevated Button Themes -- */
 class AppElevatedButtonTheme {
   AppElevatedButtonTheme._(); //To avoid creating instances
 
-
-  /* -- Light Theme -- */
   static final lightElevatedButtonTheme  = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
@@ -22,7 +19,6 @@ class AppElevatedButtonTheme {
     ),
   );
 
-  /* -- Dark Theme -- */
   static final darkElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
